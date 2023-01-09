@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Encriptador de Texto - Tomás Gomez Sprint 1 Alura</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+            <script type="text/javascript" src="script.js"></script>
+        </head>
+        <body>
+           <main>
+                <header>
+                    <img class="logoprincipal" src="imagenes/Vector.png" alt="logo_alura">
+                </header>
+                <div class="inputtext">
+                    <textarea class="ingresartexto" id="inputTexto" type="text" placeholder="Ingrese el texto aqui"></textarea>
+                
+                </div>
+                <div class="rectangulo">
+                    <img id="dibujo" src="imagenes/dibujo.jpg" alt="dibujo_buscador">
+                    <p id="textoImagen">Ningún mensaje fue encontrado</p>
+                    <p id="textoImagen2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <textarea id="textoEncriptado"></textarea>
+                    <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+                </div>
+                <div class="botonesyAlerta">
+                    <div class="instrucciones">
+                        <img class="alerta"src="imagenes/alert.png" alt="alert"> <span class="instruccionesss">Solo letras minúsculas y sin acento</span>
+                    </div>
+                    <div class="botones">
+                        <button class="boton1" onclick="encriptar()" onclick="verificar()">Encriptar!</button>
+                        <button class="boton2" onclick="desencriptar()">Desencriptar!</button>
+                    </div>
+                </div>
+            </main>
+        </body>
+
+    </html>
